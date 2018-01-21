@@ -106,7 +106,7 @@ class ChatViewController: JSQMessagesViewController {
 
 extension ChatViewController : ChatServiceManagerDelegate {
     
-    func connectedDevicesChanged(manager: ChatServiceManager, connectedDevices: [String]?) {
+    func connectedDevicesChanged(manager: ChatServiceManager, connectedDevices: [String]) {
         OperationQueue.main.addOperation {
             //self.connectedPeers.text = "Connected: " + String(connectedDevices!.count ?? 0)
             print("Connections: \(connectedDevices ?? [])")

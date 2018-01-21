@@ -12,8 +12,9 @@ import MultipeerConnectivity
 
 class TrashViewController: UIViewController,
 UIImagePickerControllerDelegate,
-UINavigationControllerDelegate  {
+UINavigationControllerDelegate{
     
+    @IBOutlet weak var devices: UITextView!
     override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
     static var tableView: UITableView!
     static var rows = [String]()
@@ -25,6 +26,7 @@ UINavigationControllerDelegate  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        chatService!.delegate = self
         
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -71,17 +73,24 @@ UINavigationControllerDelegate  {
         // Dispose of any resources that can be recreated.
     }
     
-    static func appendTo(displayName : String){
-        /*rows.append(displayName)
-        tableView.beginUpdates()
-        
-        let indexPath:IndexPath = IndexPath(row:(self.rows.count), section:0)
-        tableView.insertRows(at: [indexPath], with: .left)
-        tableView.endUpdates()
-        tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)*/
-        
-    }
+
 
 
 }
+
+extension TrashViewController : ChatServiceManagerDelegate {
+    
+    func connectedDevicesChanged(manager: ChatServiceManager, connectedDevices: [String]) {
+        OperationQueue.main.addOperation {
+            //self.connectedPeers.text = "Connected: " + String(connectedDevices!.count ?? 0)
+            self.devices.text = connectedDevices.joined(separator: "\n\n")
+        }
+    }
+    
+    func chatChanged(manager: ChatServiceManager, d: String) {
+
+    }
+    
+}
+
 

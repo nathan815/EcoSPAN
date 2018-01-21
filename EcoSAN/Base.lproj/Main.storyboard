@@ -109,9 +109,13 @@
                                     <action selector="openCameraBtn:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="s6N-Rb-mhf"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Loading...." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="olP-yd-Q8x">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Bradley's iPhone                          " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olP-yd-Q8x">
                                 <rect key="frame" x="0.0" y="371" width="375" height="247"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -145,6 +149,9 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <navigationItem key="navigationItem" title="EcoSPAN" id="E4L-gj-FWT"/>
+                    <connections>
+                        <outlet property="devices" destination="olP-yd-Q8x" id="Rdd-w1-kqf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

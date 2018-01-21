@@ -3,10 +3,12 @@ import MultipeerConnectivity
 
 protocol ChatServiceManagerDelegate {
     
-    func connectedDevicesChanged(manager : ChatServiceManager, connectedDevices: [String]?)
+    func connectedDevicesChanged(manager : ChatServiceManager, connectedDevices: [String])
     func chatChanged(manager : ChatServiceManager, d: String)
     
 }
+
+
 
 class ChatServiceManager : NSObject {
     
@@ -22,6 +24,7 @@ class ChatServiceManager : NSObject {
     private let serviceBrowser : MCNearbyServiceBrowser
     
     var delegate : ChatServiceManagerDelegate?
+
     
     lazy var session : MCSession = {
         let session = MCSession(peer: self.myPeerId, securityIdentity: nil, encryptionPreference: .required)
@@ -94,7 +97,6 @@ extension ChatServiceManager : MCNearbyServiceBrowserDelegate {
     func browser(_ browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID, withDiscoveryInfo info: [String : String]?) {
         NSLog("%@", "foundPeer: \(peerID)")
         NSLog("%@", "invitePeer: \(peerID)")
-        TrashViewController.appendTo(displayName: peerID.displayName)
         browser.invitePeer(peerID, to: self.session, withContext: nil, timeout: 30)
     }
     
@@ -111,6 +113,7 @@ extension ChatServiceManager : MCSessionDelegate {
         NSLog("%@", "peer \(peerID) didChangeState: \(state)")
         self.delegate?.connectedDevicesChanged(manager: self, connectedDevices:
             session.connectedPeers.map{$0.displayName})
+        
     }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
