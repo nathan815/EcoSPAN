@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		317F2A3A2013D3820093F1B4 /* ChatServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317F2A392013D3820093F1B4 /* ChatServiceManager.swift */; };
+		317F2A3C20141C380093F1B4 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317F2A3B20141C380093F1B4 /* Singleton.swift */; };
+		9BF262C143460227E2D81F1C /* Pods_EcoSAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBDA78C967AF7D20B9B9C02 /* Pods_EcoSAN.framework */; };
+		D8B2902F20143708007C8967 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B2902E20143708007C8967 /* MoreViewController.swift */; };
+		D8C915DD2014ED690002FE13 /* SuccessPickController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C915DC2014ED690002FE13 /* SuccessPickController.swift */; };
+		D8D036522013529A00E4FC12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D036512013529A00E4FC12 /* AppDelegate.swift */; };
+		D8D036542013529A00E4FC12 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D036532013529A00E4FC12 /* LeaderboardViewController.swift */; };
+		D8D036562013529A00E4FC12 /* TrashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D036552013529A00E4FC12 /* TrashViewController.swift */; };
+		D8D036592013529A00E4FC12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D036572013529A00E4FC12 /* Main.storyboard */; };
+		D8D0365B2013529A00E4FC12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D0365A2013529A00E4FC12 /* Assets.xcassets */; };
+		D8D0365E2013529A00E4FC12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D0365C2013529A00E4FC12 /* LaunchScreen.storyboard */; };
+		D8D036A820138CFE00E4FC12 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D036A720138CFE00E4FC12 /* ChatViewController.swift */; };
+		D8E949582013F14F008CC459 /* VerifyImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E949572013F14F008CC459 /* VerifyImageController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		317F2A392013D3820093F1B4 /* ChatServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatServiceManager.swift; sourceTree = "<group>"; };
+		317F2A3B20141C380093F1B4 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		4F326F72126D8B86B43DA857 /* Pods-EcoSAN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoSAN.release.xcconfig"; path = "Pods/Target Support Files/Pods-EcoSAN/Pods-EcoSAN.release.xcconfig"; sourceTree = "<group>"; };
+		8C6F82C5A5408731911D9049 /* Pods-EcoSAN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoSAN.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EcoSAN/Pods-EcoSAN.debug.xcconfig"; sourceTree = "<group>"; };
+		D8B2902E20143708007C8967 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		D8C915DC2014ED690002FE13 /* SuccessPickController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPickController.swift; sourceTree = "<group>"; };
+		D8D0364E2013529A00E4FC12 /* EcoSAN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoSAN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D036512013529A00E4FC12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8D036532013529A00E4FC12 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		D8D036552013529A00E4FC12 /* TrashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashViewController.swift; sourceTree = "<group>"; };
+		D8D036582013529A00E4FC12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8D0365A2013529A00E4FC12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8D0365D2013529A00E4FC12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8D0365F2013529A00E4FC12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8D036A620138B9E00E4FC12 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		D8D036A720138CFE00E4FC12 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		D8E949572013F14F008CC459 /* VerifyImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyImageController.swift; sourceTree = "<group>"; };
+		DDBDA78C967AF7D20B9B9C02 /* Pods_EcoSAN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcoSAN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8D0364B2013529A00E4FC12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BF262C143460227E2D81F1C /* Pods_EcoSAN.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35CE7179F93823A35D30FA51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDBDA78C967AF7D20B9B9C02 /* Pods_EcoSAN.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9318BCA516E7650EF9E2DB6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C6F82C5A5408731911D9049 /* Pods-EcoSAN.debug.xcconfig */,
+				4F326F72126D8B86B43DA857 /* Pods-EcoSAN.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D8D036452013529A00E4FC12 = {
+			isa = PBXGroup;
+			children = (
+				D8D036A620138B9E00E4FC12 /* Bridging-Header.h */,
+				D8D036502013529A00E4FC12 /* EcoSAN */,
+				D8D0364F2013529A00E4FC12 /* Products */,
+				9318BCA516E7650EF9E2DB6A /* Pods */,
+				35CE7179F93823A35D30FA51 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D8D0364F2013529A00E4FC12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8D0364E2013529A00E4FC12 /* EcoSAN.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8D036502013529A00E4FC12 /* EcoSAN */ = {
+			isa = PBXGroup;
+			children = (
+				D8D036512013529A00E4FC12 /* AppDelegate.swift */,
+				D8D036532013529A00E4FC12 /* LeaderboardViewController.swift */,
+				D8D036552013529A00E4FC12 /* TrashViewController.swift */,
+				D8D036A720138CFE00E4FC12 /* ChatViewController.swift */,
+				D8E949572013F14F008CC459 /* VerifyImageController.swift */,
+				D8D036572013529A00E4FC12 /* Main.storyboard */,
+				D8D0365A2013529A00E4FC12 /* Assets.xcassets */,
+				D8D0365C2013529A00E4FC12 /* LaunchScreen.storyboard */,
+				D8D0365F2013529A00E4FC12 /* Info.plist */,
+				317F2A392013D3820093F1B4 /* ChatServiceManager.swift */,
+				317F2A3B20141C380093F1B4 /* Singleton.swift */,
+				D8B2902E20143708007C8967 /* MoreViewController.swift */,
+				D8C915DC2014ED690002FE13 /* SuccessPickController.swift */,
+			);
+			path = EcoSAN;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8D0364D2013529A00E4FC12 /* EcoSAN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D036622013529A00E4FC12 /* Build configuration list for PBXNativeTarget "EcoSAN" */;
+			buildPhases = (
+				F57FA23461508A979D7C9227 /* [CP] Check Pods Manifest.lock */,
+				D8D0364A2013529A00E4FC12 /* Sources */,
+				D8D0364B2013529A00E4FC12 /* Frameworks */,
+				D8D0364C2013529A00E4FC12 /* Resources */,
+				8F2E9BFF1CD7324411F99C6F /* [CP] Embed Pods Frameworks */,
+				E6FA534501D9A154429628CC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EcoSAN;
+			productName = EcoSAN;
+			productReference = D8D0364E2013529A00E4FC12 /* EcoSAN.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8D036462013529A00E4FC12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = spartahack18;
+				TargetAttributes = {
+					D8D0364D2013529A00E4FC12 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D8D036492013529A00E4FC12 /* Build configuration list for PBXProject "EcoSAN" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8D036452013529A00E4FC12;
+			productRefGroup = D8D0364F2013529A00E4FC12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8D0364D2013529A00E4FC12 /* EcoSAN */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8D0364C2013529A00E4FC12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D0365E2013529A00E4FC12 /* LaunchScreen.storyboard in Resources */,
+				D8D0365B2013529A00E4FC12 /* Assets.xcassets in Resources */,
+				D8D036592013529A00E4FC12 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F2E9BFF1CD7324411F99C6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EcoSAN/Pods-EcoSAN-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyButton/SwiftyButton.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EcoSAN/Pods-EcoSAN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6FA534501D9A154429628CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EcoSAN/Pods-EcoSAN-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F57FA23461508A979D7C9227 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EcoSAN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8D0364A2013529A00E4FC12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D036562013529A00E4FC12 /* TrashViewController.swift in Sources */,
+				317F2A3C20141C380093F1B4 /* Singleton.swift in Sources */,
+				D8D036522013529A00E4FC12 /* AppDelegate.swift in Sources */,
+				D8E949582013F14F008CC459 /* VerifyImageController.swift in Sources */,
+				D8D036A820138CFE00E4FC12 /* ChatViewController.swift in Sources */,
+				D8C915DD2014ED690002FE13 /* SuccessPickController.swift in Sources */,
+				D8B2902F20143708007C8967 /* MoreViewController.swift in Sources */,
+				D8D036542013529A00E4FC12 /* LeaderboardViewController.swift in Sources */,
+				317F2A3A2013D3820093F1B4 /* ChatServiceManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D8D036572013529A00E4FC12 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8D036582013529A00E4FC12 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8D0365C2013529A00E4FC12 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8D0365D2013529A00E4FC12 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8D036602013529A00E4FC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8D036612013529A00E4FC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8D036632013529A00E4FC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C6F82C5A5408731911D9049 /* Pods-EcoSAN.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JK3H835X4;
+				INFOPLIST_FILE = EcoSAN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spartahack18.EcoSAN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8D036642013529A00E4FC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F326F72126D8B86B43DA857 /* Pods-EcoSAN.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JK3H835X4;
+				INFOPLIST_FILE = EcoSAN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spartahack18.EcoSAN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8D036492013529A00E4FC12 /* Build configuration list for PBXProject "EcoSAN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D036602013529A00E4FC12 /* Debug */,
+				D8D036612013529A00E4FC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8D036622013529A00E4FC12 /* Build configuration list for PBXNativeTarget "EcoSAN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D036632013529A00E4FC12 /* Debug */,
+				D8D036642013529A00E4FC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8D036462013529A00E4FC12 /* Project object */;
+}
