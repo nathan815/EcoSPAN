@@ -20,11 +20,11 @@ class ChatViewController: JSQMessagesViewController {
     @IBOutlet weak var connectedPeers: UILabel!
     
     lazy var outgoingBubble: JSQMessagesBubbleImage = {
-        return JSQMessagesBubbleImageFactory()!.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
+        return JSQMessagesBubbleImageFactory()!.outgoingMessagesBubbleImage(with: UIColor(red: 0.39, green: 0.74, blue: 0.29, alpha: 1))
     }()
     
     lazy var incomingBubble: JSQMessagesBubbleImage = {
-        return JSQMessagesBubbleImageFactory()!.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleGreen())
+        return JSQMessagesBubbleImageFactory()!.incomingMessagesBubbleImage(with: UIColor(red: 0.20, green: 0.20, blue: 0.20, alpha: 1))
     }()
 
     override func viewDidLoad() {
@@ -109,7 +109,7 @@ extension ChatViewController : ChatServiceManagerDelegate {
     func connectedDevicesChanged(manager: ChatServiceManager, connectedDevices: [String]) {
         OperationQueue.main.addOperation {
             //self.connectedPeers.text = "Connected: " + String(connectedDevices!.count ?? 0)
-            print("Connections: \(connectedDevices ?? [])")
+            print("Connections: \(connectedDevices)")
         }
     }
     

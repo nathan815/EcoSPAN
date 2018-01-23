@@ -47,17 +47,32 @@
             </objects>
             <point key="canvasLocation" x="-1279.2" y="1432.5337331334333"/>
         </scene>
-        <!--More-->
+        <!--Live Map-->
         <scene sceneID="Chf-5w-mn6">
             <objects>
                 <viewController id="Whw-Du-ZRM" customClass="MoreViewController" customModule="EcoSAN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oBi-Tb-z97">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45q-mj-ILa">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="45q-mj-ILa" firstAttribute="leading" secondItem="9mI-Nz-sNa" secondAttribute="leading" id="5NX-3W-nCm"/>
+                            <constraint firstItem="9mI-Nz-sNa" firstAttribute="trailing" secondItem="45q-mj-ILa" secondAttribute="trailing" id="PSG-l9-Yz3"/>
+                            <constraint firstItem="45q-mj-ILa" firstAttribute="top" secondItem="9mI-Nz-sNa" secondAttribute="top" id="dce-1m-CqN"/>
+                            <constraint firstItem="9mI-Nz-sNa" firstAttribute="bottom" secondItem="45q-mj-ILa" secondAttribute="bottom" id="eA3-di-UH9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9mI-Nz-sNa"/>
                     </view>
-                    <navigationItem key="navigationItem" title="More" id="Onp-xP-brZ"/>
+                    <navigationItem key="navigationItem" title="Live Map" id="Onp-xP-brZ"/>
+                    <connections>
+                        <outlet property="webView" destination="45q-mj-ILa" id="1il-76-B4N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BSi-my-sGJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,7 +124,7 @@
                                     <action selector="openCameraBtn:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="s6N-Rb-mhf"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Bradley's iPhone                          " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olP-yd-Q8x">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Nobody is currently near you" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olP-yd-Q8x">
                                 <rect key="frame" x="0.0" y="371" width="375" height="247"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -350,11 +365,11 @@
             </objects>
             <point key="canvasLocation" x="1890" y="-349"/>
         </scene>
-        <!--More-->
+        <!--Live Map-->
         <scene sceneID="8jZ-8b-JnJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XV3-ql-oDO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="More" image="more-outline" selectedImage="more" id="Pbe-vD-CS2"/>
+                    <tabBarItem key="tabBarItem" title="Live Map" image="more-outline" selectedImage="more" id="Pbe-vD-CS2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="erv-b4-6uk">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
