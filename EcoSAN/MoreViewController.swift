@@ -20,7 +20,7 @@ class MoreViewController: UIViewController {
         let url : NSURL! = NSURL(string: "http://ecosan.azurewebsites.net/")
         webView?.loadRequest(NSURLRequest(url: url as URL) as URLRequest)
         webView?.isOpaque = false;
-        webView?.backgroundColor = UIColor.clear
+        webView?.backgroundColor = UIColor.black
         webView?.scalesPageToFit = true;
         
     }
