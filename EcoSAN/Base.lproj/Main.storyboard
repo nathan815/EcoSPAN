@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BSi-my-sGJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1350" y="1433"/>
+            <point key="canvasLocation" x="681" y="1402"/>
         </scene>
         <!--EcoSPAN-->
         <scene sceneID="wg7-f3-ORb">
@@ -229,12 +229,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Esn-Yt-hvi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3375.1999999999998" y="344.97751124437787"/>
+            <point key="canvasLocation" x="2145" y="1145"/>
         </scene>
-        <!--Success Pick Controller-->
+        <!--Success Pick Up Controller-->
         <scene sceneID="TuA-Cu-3VX">
             <objects>
-                <viewController storyboardIdentifier="successPickup" id="G5s-Uc-OKJ" customClass="SuccessPickController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SuccessPickUpController" id="G5s-Uc-OKJ" customClass="SuccessPickUpController" customModule="EcoSAN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KWg-eK-z6I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -287,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7vA-GP-Toj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4144.8000000000002" y="344.97751124437787"/>
+            <point key="canvasLocation" x="2846" y="1145"/>
         </scene>
         <!--Main-->
         <scene sceneID="yl2-sM-qoP">
@@ -340,6 +340,8 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="ArY-VB-F2T"/>
+                        <segue destination="1Cg-Hy-OSn" kind="presentation" id="CI7-45-z4h"/>
+                        <segue destination="G5s-Uc-OKJ" kind="presentation" id="ByZ-zP-g3Z"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TwZ-pX-XNf" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -47,29 +47,27 @@ class VerifyImageController: UIViewController {
             "ConnectedDevices": [1, 2, 3, 4]
         ] as [String : Any]
         
-        Alamofire.request("http://ecosan.azurewebsites.net/api/trashpickup", method: .post, parameters: parameters, encoding: JSONEncoding(options: [])).responseJSON { response in
+        Alamofire.request("http://ecosan.azurewebsites.net/api/trashpickup/PickedUpTrash", method: .post, parameters: parameters, encoding: JSONEncoding(options: [])).responseJSON { response in
             let result = response.result.value!
             print(result)
-            self.dismiss(animated:true, completion: nil)
-            
-            if result as! String == "true" {
+            self.success()
+            /*if result as! String == "true" {
                 self.success()
             } else {
                 self.error()
-            }
+            }*/
         }
     }
     
     func success() {
-        let popup : VerifyImageController = self.storyboard?.instantiateViewController(withIdentifier: "successPickup") as! VerifyImageController
+        let popup = self.storyboard?.instantiateViewController(withIdentifier: "SuccessPickUpController")
+        self.dismiss(animated:true, completion: nil)
         
-        let navigationController = UINavigationController(rootViewController: popup)
+        let navigationController = UINavigationController(rootViewController: popup!)
         navigationController.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-        self.present(navigationController, animated: false, completion: nil)
-        
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationController.setNavigationBarHidden(false, animated: false)
+        present(navigationController, animated: false, completion: nil)
     }
     
     func error() {

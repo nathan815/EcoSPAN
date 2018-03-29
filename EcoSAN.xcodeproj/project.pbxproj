@@ -10,8 +10,8 @@
 		317F2A3A2013D3820093F1B4 /* ChatServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317F2A392013D3820093F1B4 /* ChatServiceManager.swift */; };
 		317F2A3C20141C380093F1B4 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317F2A3B20141C380093F1B4 /* Singleton.swift */; };
 		9BF262C143460227E2D81F1C /* Pods_EcoSAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBDA78C967AF7D20B9B9C02 /* Pods_EcoSAN.framework */; };
+		D86999A220170807007FED68 /* SuccessPickUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86999A120170807007FED68 /* SuccessPickUpController.swift */; };
 		D8B2902F20143708007C8967 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B2902E20143708007C8967 /* MoreViewController.swift */; };
-		D8C915DD2014ED690002FE13 /* SuccessPickController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C915DC2014ED690002FE13 /* SuccessPickController.swift */; };
 		D8D036522013529A00E4FC12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D036512013529A00E4FC12 /* AppDelegate.swift */; };
 		D8D036542013529A00E4FC12 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D036532013529A00E4FC12 /* LeaderboardViewController.swift */; };
 		D8D036562013529A00E4FC12 /* TrashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D036552013529A00E4FC12 /* TrashViewController.swift */; };
@@ -27,8 +27,8 @@
 		317F2A3B20141C380093F1B4 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		4F326F72126D8B86B43DA857 /* Pods-EcoSAN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoSAN.release.xcconfig"; path = "Pods/Target Support Files/Pods-EcoSAN/Pods-EcoSAN.release.xcconfig"; sourceTree = "<group>"; };
 		8C6F82C5A5408731911D9049 /* Pods-EcoSAN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoSAN.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EcoSAN/Pods-EcoSAN.debug.xcconfig"; sourceTree = "<group>"; };
+		D86999A120170807007FED68 /* SuccessPickUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SuccessPickUpController.swift; path = /Users/nathan/Dev/EcoSPAN/EcoSAN/SuccessPickUpController.swift; sourceTree = "<absolute>"; };
 		D8B2902E20143708007C8967 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
-		D8C915DC2014ED690002FE13 /* SuccessPickController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPickController.swift; sourceTree = "<group>"; };
 		D8D0364E2013529A00E4FC12 /* EcoSAN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoSAN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D036512013529A00E4FC12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8D036532013529A00E4FC12 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 				317F2A392013D3820093F1B4 /* ChatServiceManager.swift */,
 				317F2A3B20141C380093F1B4 /* Singleton.swift */,
 				D8B2902E20143708007C8967 /* MoreViewController.swift */,
-				D8C915DC2014ED690002FE13 /* SuccessPickController.swift */,
+				D86999A120170807007FED68 /* SuccessPickUpController.swift */,
 			);
 			path = EcoSAN;
 			sourceTree = "<group>";
@@ -261,10 +261,10 @@
 				D8D036522013529A00E4FC12 /* AppDelegate.swift in Sources */,
 				D8E949582013F14F008CC459 /* VerifyImageController.swift in Sources */,
 				D8D036A820138CFE00E4FC12 /* ChatViewController.swift in Sources */,
-				D8C915DD2014ED690002FE13 /* SuccessPickController.swift in Sources */,
 				D8B2902F20143708007C8967 /* MoreViewController.swift in Sources */,
 				D8D036542013529A00E4FC12 /* LeaderboardViewController.swift in Sources */,
 				317F2A3A2013D3820093F1B4 /* ChatServiceManager.swift in Sources */,
+				D86999A220170807007FED68 /* SuccessPickUpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,11 +403,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TQ8762U8NQ;
+				DEVELOPMENT_TEAM = 5JK3H835X4;
 				INFOPLIST_FILE = EcoSAN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bac.EcoSAN;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spartahack18.EcoSAN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
@@ -421,11 +421,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TQ8762U8NQ;
+				DEVELOPMENT_TEAM = 5JK3H835X4;
 				INFOPLIST_FILE = EcoSAN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bac.EcoSAN;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spartahack18.EcoSAN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.0;

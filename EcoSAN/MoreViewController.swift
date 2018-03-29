@@ -16,13 +16,11 @@ class MoreViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let url : NSURL! = NSURL(string: "http://ecosan.azurewebsites.net/")
         webView?.loadRequest(NSURLRequest(url: url as URL) as URLRequest)
         webView?.isOpaque = false;
         webView?.backgroundColor = UIColor.black
         webView?.scalesPageToFit = true;
-        
     }
     
     override func didReceiveMemoryWarning() {

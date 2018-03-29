@@ -50,17 +50,22 @@ UINavigationControllerDelegate{
     {
         TrashViewController.chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         
-        let popup : VerifyImageController = self.storyboard?.instantiateViewController(withIdentifier: "verifyTrashImg") as! VerifyImageController
-        dismiss(animated:false, completion: nil)
+        dismiss(animated:true, completion: nil)
+        
+        displayVerifying()
+        
+    }
+    
+    func displayVerifying() {
+        let popup = self.storyboard?.instantiateViewController(withIdentifier: "verifyTrashImg") as! VerifyImageController
         
         let navigationController = UINavigationController(rootViewController: popup)
         navigationController.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        navigationController.setNavigationBarHidden(true, animated: true)
         
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-        self.present(navigationController, animated: false, completion: nil)
+        self.present(navigationController, animated: true, completion: nil)
         
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-        
+        navigationController.setNavigationBarHidden(false, animated: true)
     }
     
     // When user cancels
